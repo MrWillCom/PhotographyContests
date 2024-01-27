@@ -10,4 +10,20 @@ export default async function getContests() {
       }
     })
     .filter(data => data !== null)
+    .toSorted((a, b) => {
+      const dateA = a.timeline['submission-begin']
+        .split('/')
+        .map((val: string) => parseInt(val, 10))
+      const dateB = b.timeline['submission-begin']
+        .split('/')
+        .map((val: string) => parseInt(val, 10))
+
+      if (dateA[0] != dateB[0]) {
+        return dateB[0] - dateA[0]
+      } else if (dateA[1] != dateB[1]) {
+        return dateB[1] - dateA[1]
+      } else {
+        return dateB[2] - dateA[2]
+      }
+    })
 }
