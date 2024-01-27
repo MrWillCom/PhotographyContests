@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import '@radix-ui/themes/styles.css'
 import './globals.scss'
 
-import { Theme } from '@radix-ui/themes'
+import { Providers } from './providers'
 
 export const metadata: Metadata = {
   title: 'Photography Contests',
@@ -15,9 +15,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <Theme>{children}</Theme>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
