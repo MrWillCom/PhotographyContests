@@ -1,14 +1,20 @@
 {
   "name": "Hasselblad Masters 2023",
   "description": "Held by Hasselblad, one of the world's most prestigious art competitions, giving professionals the chance to make their mark in the world of photography.",
-  "timeline": {
-    "submission-begin": "2023/12/14",
-    "submission-end": "2024/02/29"
+  "image": "https://cdn.hasselblad.com/f/77891/5120x1862/f22503d448/masters_landingpage_2023_banner.jpg",
+  "imageType": "banner",
+  "submission": {
+    "begin": "2023-12-14",
+    "end": "2024-02-29"
   },
   "links": [
     {
       "text": "Website",
       "url": "https://www.hasselblad.com/inspiration/masters/2023"
+    },
+    {
+      "text": "Rules",
+      "url": "https://www.hasselblad.com/inspiration/masters/2023/rules/"
     }
   ]
 }
